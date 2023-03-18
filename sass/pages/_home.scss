@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  
+}
+html{
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(phone) {
+    font-size: 43.75%;
+  }
+
+  
+ }
+body{
+  background-color: $color-background;
+  transition: all .2s;
+  font-size: 1.6rem;
+}

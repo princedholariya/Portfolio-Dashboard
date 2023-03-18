@@ -1,0 +1,36 @@
+@mixin center{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+@mixin respond($brekpoint){
+   @if $brekpoint == phone-s{
+      @media (max-width:20em){@content};//600px/16=320;
+   }
+   @if $brekpoint == phone-m{
+      @media (max-width:24em){@content};//600px/16=380;
+   }
+  @if $brekpoint == phone-small{
+    @media (max-width:38em){@content};//600px/16=736;
+ }
+ @if $brekpoint == phone{
+    @media (max-width:46em){@content};//600px/16=736;
+ }
+ @if $brekpoint == tab-port{
+    @media (max-width:56.25em){@content};//600px/=900;
+ }
+ @if $brekpoint == tab-land{
+    @media (max-width:75em){@content};//600px/16=1200;
+ }
+ @if $brekpoint == big-desktop{
+    @media (max-width:112.5em){@content};//600px/16=1800;
+ }
+ @if $brekpoint == min-desktop{
+   @media (min-width:112.5em){@content};//600px/16=1800;
+}
+ @if $brekpoint == min-height{
+   @media (max-height:31.25em){@content};//600px/16=1800;
+}
+
+}

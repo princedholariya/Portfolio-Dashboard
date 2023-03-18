@@ -1,0 +1,32 @@
+.main{
+  display: grid;
+  grid-template-columns: .8fr 5.3fr 4fr;
+
+  @include respond(tab-land) {
+    grid-template-columns: 3fr 2fr;
+
+  }
+  @include respond(phone) {
+   display: flex;
+   flex-direction: column;
+  }
+ 
+
+}
+  .project{
+    
+    height: 85vh;
+    @include respond(phone) {
+      height: 100vh;
+ 
+     }
+
+  }
+  .message{
+  
+    height: 85vh;
+    @include respond(phone) {
+      height: 10vh;
+ 
+     }
+  }

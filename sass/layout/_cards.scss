@@ -1,0 +1,254 @@
+.card{
+  
+  background-color:$color-white ;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2.5rem;
+  
+  box-shadow: 0px 1px 15px -7px rgba(0, 0, 0, 0.75);
+
+  gap: 2rem;
+  &__border{
+    padding: 1.5rem;
+    border-bottom: 1px solid $color-light-grey;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    &-date{
+      font-size: 1.6rem;
+      color: $color-dark-grey;
+       text-transform: uppercase;
+    }
+
+    &-icon{
+      height: 2rem;
+      width: 2rem;
+      font-weight: 700;
+      
+    }
+  }
+
+  &__midle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-box{
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+      align-items: center;
+      justify-content: center;
+      &--h2{
+        font-weight: 600;
+        
+      }
+      &--p{
+        color: $color-dark-grey;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__progress-box{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    &--p1{
+      align-self: flex-start;
+      font-size: 1.6rem;
+    }
+    &--line---1{
+      height: .5rem;
+      width: 100%;
+      background-color: $color-light-grey;
+      border-radius: 2rem;
+    }
+    &--line---2{
+      height: .5rem;
+      width: 90%;
+      border-radius: 2rem;
+      background-color: $color-dark-blue;
+    }
+    &--p2{
+      align-self: flex-end;
+      font-size: 1.1rem;
+    }
+
+  }
+
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1.5rem 1.5rem 1.5rem;
+
+    &-left{
+      display: flex;
+      gap: 1rem;
+      
+      &--1{
+        &---photo1{
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        &---photo2{
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          margin-left: -.9rem;
+          object-fit: cover;
+        }
+      }
+      &--2{
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-dark-blue;
+        border-radius: 50%;
+        &---add{
+          height: 2rem;
+          width: 2rem;
+          stroke: $color-white;
+        }
+      }
+    }
+    &-right{
+      background-color: $color-dull-blue;
+      border-radius: 2rem;
+      &--p{
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $color-dark-blue;
+        padding: .8rem 2rem;
+      }
+    }
+  }
+
+  &__2{
+    background-color:$color-dull-orange ;
+    .card__border{
+      border-bottom: 1px solid $color-white;
+    }
+    .card__progress-box--line---1{
+      background-color: $color-white;
+    }
+    .card__progress-box--line---2{
+      background-color: $color-dark-orange;
+      width: 30%;
+    }
+    .card__bottom-left--2{
+      background-color: $color-dark-orange;
+    }
+    .card__bottom-right{
+      background-color: $color-white ;
+    }
+    .card__bottom-right--p{
+      color: $color-dark-orange;
+    }
+  }
+
+  &__3{
+    background-color:$color-dull-green ;
+    .card__border{
+      border-bottom: 1px solid $color-white;
+    }
+    .card__progress-box--line---1{
+      background-color: $color-white;
+    }
+    .card__progress-box--line---2{
+      background-color: $color-dark-green;
+      width: 50%;
+    }
+    .card__bottom-left--2{
+      background-color: $color-dark-green;
+    }
+    .card__bottom-right{
+      background-color: $color-white;
+    }
+    .card__bottom-right--p{
+      color: $color-dark-green;
+    }
+  }
+
+  &__4{
+    background-color:$color-dull-pink;
+    .card__border{
+      border-bottom: 1px solid $color-white;
+    }
+    .card__progress-box--line---1{
+      background-color: $color-white;
+    }
+    .card__progress-box--line---2{
+      background-color: $color-dark-pink;
+      width: 20%;
+    }
+    .card__bottom-left--2{
+      background-color: $color-dark-pink;
+    }
+    .card__bottom-right{
+      background-color: $color-white;
+    }
+    .card__bottom-right--p{
+      color: $color-dark-pink;
+    }
+  }
+
+  &__5{
+    background-color:$color-dull-volet;
+    .card__border{
+      border-bottom: 1px solid $color-white;
+    }
+    .card__progress-box--line---1{
+      background-color: $color-white;
+    }
+    .card__progress-box--line---2{
+      background-color: $color-dark-volet;
+      width: 60%;
+    }
+    .card__bottom-left--2{
+      background-color: $color-dark-volet;
+    }
+    .card__bottom-right{
+      background-color: $color-white;
+    }
+    .card__bottom-right--p{
+      color: $color-dark-volet;
+    }
+  }
+
+  &__6{
+    background-color:$color-dull-yellow;
+    .card__border{
+      border-bottom: 1px solid $color-white;
+    }
+    .card__progress-box--line---1{
+      background-color: $color-white;
+    }
+    .card__progress-box--line---2{
+      background-color: $color-dark-yellow;
+      width: 70%;
+    }
+    .card__bottom-left--2{
+      background-color: $color-dark-yellow;
+    }
+    .card__bottom-right{
+      background-color: $color-white;
+    }
+    .card__bottom-right--p{
+      color: $color-dark-yellow;
+    }
+  }
+
+ 
+}

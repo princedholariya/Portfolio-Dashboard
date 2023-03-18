@@ -1,0 +1,72 @@
+.message{
+  
+  &__client{
+    padding: 4rem 1.5rem 1rem 1.5rem;
+    border-bottom: 1px solid $color-dark-grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-left{
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    &-right{
+      display: flex;
+      gap: 1rem;
+      &--icon{
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+  &__box{
+    transition: all .3s;
+    &:hover{
+      background-color: $color-white;
+    }
+    &s{
+       height: 70vh;
+       overflow: scroll;
+       &::-webkit-scrollbar{
+        display: none;
+       }
+    }
+    display: flex;
+    align-items: center;
+     &:not(:last-child){
+      border-bottom: 1px solid $color-dark-grey;
+      
+     }
+    gap: 2rem;
+    padding: 2rem;
+    &-left{
+      &--photo{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        
+      }
+    }
+    &-right{
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      &--head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &---name{
+          font-size: 2rem;
+        }
+        &---icon{
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+      &--bottom{
+        align-self: flex-end;
+      }
+    }
+  }
+}

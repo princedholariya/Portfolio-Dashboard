@@ -1,0 +1,115 @@
+.project {
+  padding: 4rem 3rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: $color-white;
+  border-radius: 2.5rem;
+  @include respond(phone) {
+    border-radius: 0;
+   }
+  &__section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-p1 {
+      font-size: 2rem;
+      color: $color-dark-grey;
+      font-weight: 600;
+    }
+    &-p2 {
+      font-size: 1.8rem;
+      color: $color-dark-grey;
+      font-weight: 600;
+    }
+  }
+  &__section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-cards {
+      display: flex;
+
+      gap: 2rem;
+      @include respond(phone-m) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+      }
+      @include respond(phone) {
+        gap: 7rem;
+
+      }
+      @include respond(tab-port) {
+        gap: 1rem;
+
+      }
+      &-progress {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &--text {
+          font-size: 1.6rem;
+          font-weight: 600;
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+        }
+        &--box {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          @include respond(phone-m) {
+           
+            gap: 1rem;
+          }
+          &---p {
+            color: $color-dark-grey;
+            font-size: 1.6rem;
+            @include respond(phone) {
+              font-size: 2rem;
+            }
+          }
+          &---dot {
+            height: 0.6rem;
+            width: 0.6rem;
+            border: 1px solid $color-dark-grey;
+            border-radius: 50%;
+            align-self: end;
+          }
+        }
+      }
+    }
+    &-icons {
+      display: flex;
+      align-items: center;
+      align-self: flex-start;
+      align-self: center;
+     
+      gap: 2rem;
+      &--icon {
+        height: 2rem;
+        width: 2rem;
+        @include respond(phone) {
+          height: 3rem;
+          width: 3rem;
+  
+        }
+      }
+    }
+  }
+  &__section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include respond(phone) {
+     grid-template-columns: 1fr;
+     padding: 3rem;
+    }
+    grid-gap: 3rem 3rem;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
